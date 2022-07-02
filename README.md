@@ -11,7 +11,7 @@ But maitaining pages for LOADS of multimedia content - photos and videos - can b
 
 Yes, features, developers, developers, developers! Hear here:
 
-- mm-webpage is implemented it go, as hugo is and überhaupt
+- mm-webpage is implemented in go, as hugo is and überhaupt
 - mm-webpage scans some top-level media folder (#ORIGINALS), recursively
 
 For the media (images .jpg, movies .mp4/.mov, music .mp3) mm-webpage finds, it:
@@ -37,3 +37,7 @@ docker run --rm \
 ```
 
 That is, `mm-webpage` binary will assume to be run within a docker context by default and use `/input` and `/output` directories operations. The `schnoddelbotz/mm-webpage` DOCKER image contains a recent HUGO version to further lower installation efforts. You only have to trust the Hacker, lol. User the [Dockerfile](./Dockerfile) yourself - better is.
+
+# TOP SECRET FEATURE 
+
+Micropayment via a secure AWS Lambda or Google Cloudfunction call. Arbitrary amount people can leave. How best done? Flattr once...?
