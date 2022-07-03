@@ -1,6 +1,8 @@
 # mm-webpage
 
-make ma webpage multi media ... builds static websites for your photos and videos
+make ma webpage multi media ... builds static websites for your photos and videos.
+
+If you wish, a HUGO preprocessor and executor.
 
 ## Was hat sich der Erfinder hierbei so gedacht, hm?
 
