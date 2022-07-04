@@ -1,0 +1,41 @@
+body {
+    background-color: aqua;
+}
+
+header {
+    clear: both;
+}
+
+main {
+    clear: both;
+}
+
+section {
+    border: 5px solid yellow;
+    width: 45%;
+    height: 400px;
+    float: left;
+    margin: 15px;
+}
+
+section.docs {
+    border: 5px solid green;
+}
+
+section h2 {
+    margin: 0;
+    padding: 20px;
+}
+.docs h2 { background-color: beige;}
+.videos h2 { background-color: brown;}
+.images h2 { background-color: cadetblue;}
+.sounds h2 { background-color: crimson;}
+
+div.section-box {
+    background-color: blueviolet;
+    padding: 20px;
+}
+
+footer {
+    clear: both;
+}
