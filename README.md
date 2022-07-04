@@ -1,4 +1,4 @@
-# mm-webpage
+# 2phacker
 
 make ma webpage multi media ... builds static websites for your photos and videos.
 
@@ -13,17 +13,17 @@ But maitaining pages for LOADS of multimedia content - photos and videos - can b
 
 Yes, features, developers, developers, developers! Hear here:
 
-- mm-webpage is implemented in go, as hugo is and überhaupt
-- mm-webpage scans some top-level media folder (#ORIGINALS), recursively
+- 2phacker is implemented in go, as hugo is and überhaupt
+- 2phacker scans some top-level media folder (#ORIGINALS), recursively
 
-For the media (images .jpg, movies .mp4/.mov, music .mp3) mm-webpage finds, it:
+For the media (images .jpg, movies .mp4/.mov, music .mp3) 2phacker finds, it:
 
 - writes corresponding webpages for later HUGO digestion
 - creates animated GIF/webm thumbnails / previews for videos
 - creates thumbnails/previews for videos
 - makes any EXIF/IPTC meta data available to hugo templates 
 - 
-- mm-webpage is not here yet, yeah, meh.
+- 2phacker is not here yet, yeah, meh.
 
 ## COME SE DICE ...
 
@@ -35,10 +35,10 @@ Docker. Ideally, one day (goal):
 docker run --rm \
     -v/home/jan/MultiMediaCollection:/input \
     -v/var/www/media:/output \ 
-    schnoddelbotz/mm-webpage
+    schnoddelbotz/2phacker
 ```
 
-That is, `mm-webpage` binary will assume to be run within a docker context by default and use `/input` and `/output` directories operations. The `schnoddelbotz/mm-webpage` DOCKER image contains a recent HUGO version to further lower installation efforts. You only have to trust the Hacker, lol. User the [Dockerfile](./Dockerfile) yourself - better is.
+That is, `2phacker` binary will assume to be run within a docker context by default and use `/input` and `/output` directories operations. The `schnoddelbotz/2phacker` DOCKER image contains a recent HUGO version to further lower installation efforts. You only have to trust the Hacker, lol. User the [Dockerfile](./Dockerfile) yourself - better is.
 
 # TOP SECRET FEATURE 
 

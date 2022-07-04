@@ -6,7 +6,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"schnoddelbotz/mm-webpage/inputs"
+	"schnoddelbotz/2phacker/inputs"
 )
 
 type texasRanger struct {

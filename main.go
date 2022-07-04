@@ -1,11 +1,16 @@
 package main
 
 import (
-	"schnoddelbotz/mm-webpage/walker"
+	"schnoddelbotz/2phacker/cmd"
+//	"schnoddelbotz/2phacker/walker"
 )
 
 func main() {
-	w := walker.NewWalker(".")
-	w.RunForest()
-	// now exec() hugo itself, completing work
+	cmd.Execute()
 }
+
+// func main() {
+// 	w := walker.NewWalker(".")
+// 	w.RunForest()
+// 	// now exec() hugo itself, completing work
+// }

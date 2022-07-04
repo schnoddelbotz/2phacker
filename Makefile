@@ -1,6 +1,6 @@
 
 
-BINARY := mm-webpage
+BINARY := 2phacker
 
 ALL: $(BINARY)
 
