@@ -1,41 +1,77 @@
+html {
+    background-color: #111;
+    font-family: Helvetica, Arial, sans-serif;
+}
 body {
-    background-color: aqua;
+    background-color:#000;
+    color:#ddd;
 }
 
 header {
     clear: both;
+    font-size: 2em;
+    padding: 0 1em;
 }
 
 main {
+    color:black;
     clear: both;
+    width: 100%;
+    padding: 2em;
+    border-top: 2px solid #a33;
 }
 
 section {
-    border: 5px solid yellow;
-    width: 45%;
+    border: 5px solid black;
+    width: 47%;
+    max-width: 600px;
     height: 400px;
     float: left;
-    margin: 15px;
+    margin: 0.5em;
+    background-color: #ddd;
 }
 
-section.docs {
-    border: 5px solid green;
+@media only screen and (max-width: 900px) {
+    section {
+      width: 95%;
+    }
 }
+
+section.docs {border: 5px solid #ccc;}
+section.videos {border: 5px solid #999;}
+section.images {border: 5px solid #666;}
+section.sounds {border: 5px solid #333;}
 
 section h2 {
     margin: 0;
+    font-size: 2em;
     padding: 20px;
+    letter-spacing: 1ex;
+    background-color: #ccc;
 }
-.docs h2 { background-color: beige;}
-.videos h2 { background-color: brown;}
-.images h2 { background-color: cadetblue;}
-.sounds h2 { background-color: crimson;}
+/* .docs h2 { background-color: #ccc;} */
 
 div.section-box {
-    background-color: blueviolet;
+    background-color: #ddd;
+    height:280px;
     padding: 20px;
+}
+
+div.section-box ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+div.section-box ul li {
+    border: 1px solid #aaa;
+    margin:5px;
+    min-height:70px;
+    padding: 5px;
 }
 
 footer {
     clear: both;
+    padding:2em;
+    color: #666;
 }

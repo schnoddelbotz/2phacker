@@ -39,9 +39,11 @@ docker run --rm \
     -v/var/www/media:/output \ 
     schnoddelbotz/2phacker
 ```
+<!-- 
+That is, `2phacker` binary will assume to be run within a docker context by default and use `/input` and `/output` directories operations. The `schnoddelbotz/2phacker` DOCKER image contains a recent HUGO version to further lower installation efforts. You only have to trust the Hacker, lol. User the [Dockerfile](./Dockerfile) yourself - better is. -->
 
-That is, `2phacker` binary will assume to be run within a docker context by default and use `/input` and `/output` directories operations. The `schnoddelbotz/2phacker` DOCKER image contains a recent HUGO version to further lower installation efforts. You only have to trust the Hacker, lol. User the [Dockerfile](./Dockerfile) yourself - better is.
+# TOP SECRET FEATURE - todo ...
 
-# TOP SECRET FEATURE 
+- Micropayment via a secure AWS Lambda or Google Cloudfunction call. Arbitrary amount people can leave. How best done? Flattr once...?
 
-Micropayment via a secure AWS Lambda or Google Cloudfunction call. Arbitrary amount people can leave. How best done? Flattr once...?
+- 
