@@ -7,11 +7,13 @@ package cmd
 import (
 	"fmt"
 	"os"
+	"strings"
 
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 )
 
+var AppVersion string
 var cfgFile string
 
 // rootCmd represents the base command when called without any subcommands
@@ -44,9 +46,17 @@ func init() {
 
 	rootCmd.PersistentFlags().StringVar(&cfgFile, "config", "", "config file (default is $HOME/.2phacker.yaml)")
 
-	// Cobra also supports local flags, which will only run
-	// when this action is called directly.
-	rootCmd.Flags().BoolP("toggle", "t", false, "Help message for toggle")
+	rootCmd.PersistentFlags().StringP("docs-dir", "d", "~/TUBE_CONTENT/docs", "HUGO repository checkout to work on")
+	rootCmd.PersistentFlags().StringP("movies-dir", "m", "~/TUBE_CONTENT/movies", "top-level folder with videos (.mp4, .mov)")
+	rootCmd.PersistentFlags().StringP("sounds-dir", "s", "~/TUBE_CONTENT/sounds", "top-level folder with music (.mp3)")
+	rootCmd.PersistentFlags().StringP("images-dir", "i", "~/TUBE_CONTENT/images", "top-level folder with images (.jpg)")
+	rootCmd.PersistentFlags().StringP("webroot", "w", "~/TUBE_WEBROOT/", "Local HUGO output directory") // ? S3 rsync hardlink ...
+
+	_ = viper.BindPFlag("webroot", rootCmd.PersistentFlags().Lookup("webroot"))
+
+	replacer := strings.NewReplacer("-", "_")
+	viper.SetEnvKeyReplacer(replacer)
+	viper.SetEnvPrefix("2PH")
 }
 
 // initConfig reads in config file and ENV variables if set.

@@ -4,6 +4,8 @@ make ma webpage multi media ... builds static websites for your photos and video
 
 If you wish, a HUGO preprocessor and executor.
 
+https://github.com/schnoddelbotz/lalaKrautHomebrew
+
 ## Was hat sich der Erfinder hierbei so gedacht, hm?
 
 What did the inventor think before coming here, to share his code farts with public on github. Well. Hosting some static website is fun thanks to HUGO.

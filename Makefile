@@ -9,3 +9,6 @@ $(BINARY): *.go */*.go go.mod
 
 clean:
 	rm -f $(BINARY)
+
+serve: $(BINARY)
+	./$(BINARY) serve
