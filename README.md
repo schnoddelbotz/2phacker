@@ -23,9 +23,23 @@ For the media (images .jpg, movies .mp4/.mov, music .mp3) 2phacker finds, it:
 - writes corresponding webpages for later HUGO digestion
 - creates animated GIF/webm thumbnails / previews for videos
 - creates thumbnails/previews for videos
-- makes any EXIF/IPTC meta data available to hugo templates 
+- makes any EXIF/IPTC meta data available to hugo templates
+- provides built-in hugo templates to produce galleries from the above
+- permits use of own templates
+- writes https://gohugo.io/templates/data-templates/ for hugo template digestion
 - 
 - 2phacker is not here yet, yeah, meh.
+
+## All TODOs tutti
+
+
+- add micro payment services so visitors CAN donate (flattr et al)
+- would be imaginable to have a (cross-platform) UI on top 
+  - more "app" than "program" :/ enabling more users ...
+  - permit meta-data editing of mp3/mp3/jpg (IPTC!) as it serves as input for hugo data-templates (single source of truth - THE file)
+- when sold as online service instead of local app ...
+  - support aws s3 / glacier / google drive / gcs as source 
+- never replicate hugo functionality - e.g. `2phacker serve` is only shorthand to preprocess and the run hugo serve
 
 ## COME SE DICE ...
 
